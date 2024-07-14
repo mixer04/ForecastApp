@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 
 api_key = "" # TODO: API key
 
-print("Welcome to the Forecast App")
+print("Welcome to the ForecastApp")
 
 city_name = input("City: ").split() # user input is split into separate words
 city_name = " ".join(word.capitalize() for word in city_name) # if the city name has 2 or more words, each word is capitalized
