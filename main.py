@@ -1,7 +1,16 @@
 import requests
 from datetime import datetime, timedelta
 
-api_key = "" # TODO: API key
+with open('api_key.txt', 'r') as file:
+    api_key = file.read().strip()
+
+# test API connection
+url = f"http://api.openweathermap.org/data/2.5/weather?q=Warsaw&units=metric&appid={api_key}"
+response = requests.get(url)
+if response.status_code != 200:
+    print("Error: Unable to connect to the API. Please check your API key and try again.")
+    exit(1)
+
 
 print("Welcome to the ForecastApp")
 
@@ -26,13 +35,13 @@ if city_name != None:
         mode = input("Choose display mode: ")
         if mode == "1":
             print(f"\nWeather in {city_name}:\n")
-            print(f"Temperature: {temperature} C")
+            print(f"Temperature: {temperature} °C")
             print(f"Description: {weather_description}")
             print(f"Wind: {wind} m/s")
             print("\n")
         elif mode == "2":
             print(f"\nWeather in {city_name}:\n")
-            print(f"Temperature: {temperature} C (feels like {feels_like_temperature} C)")
+            print(f"Temperature: {temperature} °C (feels like {feels_like_temperature} °C)")
             print(f"Description: {weather_description}")
             print(f"Wind: {wind} m/s")
             print(f"Humidity: {humidity}%")
