@@ -1,24 +1,37 @@
-**README for Weather Forecast App**
+# ForecastApp
 
-Welcome to the Weather Forecast App! This Python script allows you to check the current weather conditions for any city using the OpenWeatherMap API.
+This Python application uses the OpenWeatherMap API to fetch and display weather forecasts for a given city.
 
-To use this app, follow these steps:
+## Table of Contents
+1. [Prerequisites](#prerequisites)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Features](#features)
+5. [Skills Demonstrated](#skills-demonstrated)
 
-1. Sign up for an API key from OpenWeatherMap: https://openweathermap.org/appid
-2. Create a new text file named `api_key.txt` in the same directory as your Python script.
-3. Paste your API key into the `api_key.txt` file.
-4. Make sure you have Python installed on your system.
-5. Run the Python script using the command `python weather_forecast_app.py`.
+## Prerequisites
+- Python 3.x
+- A valid API key from OpenWeatherMap (https://openweathermap.org/appid)
 
-Here's a brief overview of the features and usage of the app:
+## Installation
+1. Clone this repository: `git clone https://github.com/your-username/forecast-app.git`
+2. Navigate to the project directory: `cd forecast-app`
+3. Create a file named `api_key.txt` and paste your OpenWeatherMap API key into it.
 
-- The app will display a welcome message and prompt you to enter a city name.
-- It will then validate the city name and make a request to the OpenWeatherMap API to fetch the current weather data.
-- If the city is found, the app will display the weather information based on the selected display mode:
-  - Simple forecast: Displays the temperature, weather description, and wind speed.
-  - Detailed forecast: Displays additional information such as feels like temperature, humidity, pressure, visibility, and cloud coverage.
-- If the city is not found, the app will display an error message and prompt you to try again.
+## Usage
+1. Run the application: `python forecast_app.py`
+2. Enter the name of the city when prompted.
+3. Choose the display mode (Simple or Detailed) when prompted.
 
-Please note that this app requires an active internet connection to fetch weather data from the OpenWeatherMap API.
+## Features
+- Fetches weather data for a given city using the OpenWeatherMap API.
+- Displays the current temperature, weather description, wind speed, and other relevant information.
+- Provides options for simple or detailed forecasts.
 
-Enjoy using the Weather Forecast App! Let me know if you have any questions or need further assistance.
+## Skills Demonstrated
+- Python programming language
+- Working with APIs (OpenWeatherMap)
+- Handling user input and error handling
+- File I/O operations
+- Basic data manipulation and formatting
+- Displaying information to the user in a clear and organized 
