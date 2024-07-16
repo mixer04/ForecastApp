@@ -14,12 +14,12 @@ This Python application uses the OpenWeatherMap API to fetch and display weather
 - A valid API key from OpenWeatherMap (https://openweathermap.org/appid)
 
 ## Installation
-1. Clone this repository: `git clone https://github.com/your-username/forecast-app.git`
-2. Navigate to the project directory: `cd forecast-app`
+1. Clone this repository
+2. Navigate to the project directory: `cd ForecastApp`
 3. Create a file named `api_key.txt` and paste your OpenWeatherMap API key into it.
 
 ## Usage
-1. Run the application: `python forecast_app.py`
+1. Run the application: `python main.py`
 2. Enter the name of the city when prompted.
 3. Choose the display mode (Simple or Detailed) when prompted.
 
